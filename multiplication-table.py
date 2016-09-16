@@ -2,6 +2,7 @@
 multiplication-table.py
 Author: Vinzent
 Credit: http://stackoverflow.com/questions/18458024/cant-figure-out-how-to-print-horizontally-in-python
+        http://stackoverflow.com/questions/20415384/properly-formatted-multiplication-table
 Assignment:
 
 Write and submit a Python program that prints a multiplication table. The user 
@@ -21,6 +22,6 @@ Height of multiplication table: 8
   7  14  21  28  35  42  49  56  63  70
   8  16  24  32  40  48  56  64  72  80
 """
-for x1 in range (1,11):
-    print (x1, end="   ")
-
+for x in range (1,9):
+    for y in range (1,11):
+        print ('{:>2}'.format(x*y))
