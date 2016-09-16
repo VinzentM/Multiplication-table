@@ -1,7 +1,7 @@
 """
 multiplication-table.py
-Author: <your name here>
-Credit: <list sources used, if any>
+Author: Vinzent
+Credit: http://stackoverflow.com/questions/18458024/cant-figure-out-how-to-print-horizontally-in-python
 Assignment:
 
 Write and submit a Python program that prints a multiplication table. The user 
@@ -21,3 +21,6 @@ Height of multiplication table: 8
   7  14  21  28  35  42  49  56  63  70
   8  16  24  32  40  48  56  64  72  80
 """
+for x1 in range (1,11):
+    print (x1, end="   ")
+
