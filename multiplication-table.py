@@ -22,6 +22,10 @@ Height of multiplication table: 8
   7  14  21  28  35  42  49  56  63  70
   8  16  24  32  40  48  56  64  72  80
 """
-for x in range (1,9):
-    for y in range (1,11):
-        print ('{:>2}'.format(x*y))
+x=10
+y=8
+m = list(list(range(1*i,(x+1)*i, i)) for i in range(1,y+1))
+for i in m:
+    i = [str(j).rjust(len(str(m[-1][-1]))+3) for j in i]
+    print(''.join(i))
+     
